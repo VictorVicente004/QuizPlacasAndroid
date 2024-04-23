@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/quizbackground"
+    android:padding="24dp"
+    tools:context=".Tela1">
+
+    <TextView
+        android:id="@+id/txtTotalQuest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Questões totais"
+        android:textSize="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/imgPlacas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/placa1"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/txtQuests"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/txtQuests"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/escolhas_layout"
+        android:layout_margin="20dp"
+        android:text="Aqui vai ser as questões"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/escolhas_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btnA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Resposta A"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Resposta B"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Resposta C"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Resposta D"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/escolhas_layout"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#000000"
+
+        android:text="Enviar"
+        android:textColor="#FEEA3B" />
+
+
+</RelativeLayout>
+
+
+
+
+
+

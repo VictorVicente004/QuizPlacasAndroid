@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F4B303"
+            android:gravity="center"
+            android:text="Quiz de Placas"
+            android:textColor="#000000"
+            android:textSize="48sp" />
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="422dp"
+            android:layout_height="368dp"
+            android:src="@drawable/fotoinicio" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+
+
+
+
+        <Button
+            android:id="@+id/btnIniciar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F3B203"
+            android:text="Iniciar jogo"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
