@@ -59,7 +59,6 @@ public class Tela1 extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View v) {
         Button clickedButton = (Button) v;
 
-
         btnA.setBackgroundColor(Color.WHITE);
         btnB.setBackgroundColor(Color.WHITE);
         btnC.setBackgroundColor(Color.WHITE);
@@ -81,7 +80,7 @@ public class Tela1 extends AppCompatActivity implements View.OnClickListener {
         else {
             // Escolhas dos botões clicados
             respostaSelec = clickedButton.getText().toString();
-        clickedButton.setBackgroundColor(Color.MAGENTA);
+        clickedButton.setBackgroundColor(Color.YELLOW);
 
         }
 
